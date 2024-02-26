@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controle de estoque</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
 </head>
 <body>
     <a href="../Menu/page.html">Voltar</a>
@@ -21,5 +22,22 @@
     <div>
         <button onclick="adicionarItem()">✔</button>
     </div>
+    <br>
+    <div>
+        <table id="tabela">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Valor</th>
+                    <th>Quantidade</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <div>
+        <button onclick="exportarParaExcel()">Gerar Excel</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
