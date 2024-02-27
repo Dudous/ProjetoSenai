@@ -1,0 +1,17 @@
+h1, .inputs, #divtable, thead, tr{
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    padding: 10px;
+    margin: 10px;
+}
+th, tbody{
+    width: 100px;
+}
+td{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}

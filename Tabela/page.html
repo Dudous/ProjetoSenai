@@ -2,42 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Controle de estoque</title>
+    <title>Document</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <a href="../Menu/page.html">Voltar</a>
     <h1>Tabela</h1>
     <br>
-    <div>
-        <input type="text" placeholder="Nome do Produto" id="nome">
-        <br><br>
-        <input type="text" placeholder="Valor do Produto" id="valor">
-        <br><br>
-        <input type="text" placeholder="Quantidade" id="quantidade">
-        <br><br>
-    </div>
-    <div>
-        <button onclick="adicionarItem()">✔</button>
+    <div class="inputs">
+        <input type="text" placeholder="Carro" id="Carro">
+        <input type="text" placeholder="Placa" id="Placa">
+        <input type="text" placeholder="Cor" id="Cor">
+        <input type="text" placeholder="Tamanho" id="Tamanho">
+        <input type="text" placeholder="Hora de Entrada" id="HoraEntrada">
+        <input type="text" placeholder="Hora de Saída" id="HoraSaida">
     </div>
     <br>
-    <div>
-        <table id="tabela">
+    <div class="inputs">
+        <button onclick="AddItem()">✅ Adicionar</button>
+    </div>
+    <br>
+    <div id="divtable">
+        <table id="Tabela">
             <thead>
                 <tr>
-                    <th>Nome</th>
-                    <th>Valor</th>
-                    <th>Quantidade</th>
+                    <th>Carro</th>
+                    <th>Placa</th>
+                    <th>Cor</th>
+                    <th>Tamanho</th>
+                    <th>Hora de Entrada</th>
+                    <th>Hora de Saída</th>
                 </tr>
             </thead>
             <tbody></tbody>
         </table>
     </div>
-    <div>
-        <button onclick="exportarParaExcel()">Gerar Excel</button>
+    <br>
+    <div class="inputs">
+        <button onclick="Excel()">Gerar Excel</button>
     </div>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
