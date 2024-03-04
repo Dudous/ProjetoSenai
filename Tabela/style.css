@@ -31,7 +31,7 @@ td{
   #caixa{
       align-content: center;
       border-radius: 20px;
-      background-color: tomato;
+      background-color: rgb(243, 61, 61);
       width: 70%;
       padding: 50px;
   }
