@@ -43,3 +43,10 @@ button{
     border-width: 0;
     
 }
+.btn:hover{
+    background-color: rgb(84, 207, 67);
+  }
+  
+.btn-del:hover{
+    background-color: rgb(207, 67, 67);
+  }

@@ -23,7 +23,7 @@
         </div>
         <br>
         <div class="inputs">
-            <button onclick="adicionarItem()">✅ Adicionar</button>
+            <button class="btn" onclick="adicionarItem()">Adicionar</button>
         </div>
         <br>
         <div id="divtable">
@@ -43,7 +43,11 @@
         </div>
         <br>
         <div class="inputs">
-            <button onclick="exportarParaExcel()">Gerar Excel</button>
+            <button class="btn" onclick="exportarParaExcel()">Gerar Excel</button>
+        </div>
+        <div>
+            <input type="text" id="nomeRemover">
+            <button class="btn-del" onclick="removerItem()">Remover Item</button>
         </div>
         <script src="./script.js"></script>
     </div>
