@@ -42,7 +42,7 @@ function adicionarItem(){
 
 function exportarParaExcel(){
     var tabela = document.getElementById("tabela");
-    var nomeArquivo = "Estacionamento.xlsx";
+    var nomeArquivo = "Dados-Estacionamento.xlsx";
     var wb = XLSX.utils.table_to_book(tabela, {sheet: "Estacionamento"});
     XLSX.writeFile(wb, nomeArquivo);
 }

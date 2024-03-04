@@ -16,6 +16,8 @@ input{
 }
 th, tbody{
     width: 100px;
+    margin: auto;
+
 }
 td{
     width: 100px;
@@ -28,13 +30,13 @@ td{
     font-style: normal;
   }
 
-  #caixa{
-      align-content: center;
-      border-radius: 20px;
-      background-color: rgb(243, 61, 61);
-      width: 70%;
-      padding: 50px;
-  }
+#caixa{
+    align-content: center;
+    border-radius: 20px;
+    background-color: rgba(247, 223, 15, 0.74);
+    width: 70%;
+    padding: 50px;
+}
 button{
     padding: 5px;
     border-radius: 5px;
